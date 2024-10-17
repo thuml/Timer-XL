@@ -2,11 +2,16 @@
 
 Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[arxiv]](https://arxiv.org/abs/2410.04803).
 
+
+## Introduction
+
+Timer-XL is a generative Transformer for unified time series forecasting, a mininally tailored scalable backbone for making long-context, aribitray-length and any-variable predictions.
+
 <p align="center">
 <img src="./figures/motivation.png" alt="" align=center />
 </p>
 
-🔥 Based on forecasting principles, we advocate to **extend the context length** in the time series field. 
+💪 Based on forecasting principles, we advocate to **extend the context length** in the time series field. 
 
 💡 To facilitate long-context Transformers on diverse tasks, we propose **multivariate next token prediction**, a novel paradigm to uniformly predict 1D and 2D time series with optional covariates. 
 
@@ -14,9 +19,7 @@ Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[arxiv]
 
 🏆 Timer-XL achieves **state-of-the-art** on both supervised performance and generalization capabilities as a one-for-all large time series model.
 
-## Updates
 
-:triangular_flag_on_post: **News** (2024.10) Code implementation and scripts will be released soon.
 
 ## What is New
 
@@ -26,11 +29,11 @@ Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[arxiv]
 
 | Time-Series Transformers                      | PatchTST | iTransformer | Moiria | Timer | Timer-XL |
 | --------------------------------------------- | -------- | ------------ | ------ | ----- | -------- |
+| Generative Model (Causality, Flexible Length) | No       | No           | No     | Yes   | **Yes**  |
 | Fine-Grained Modeling of Temporal Dynamics        | Yes      | No           | Yes    | Yes   | **Yes**  |
 | Explicit Modeling of Variate Correlation          | No       | Yes          | Yes    | No    | **Yes**  |
-| Generative Model (Causality, Flexible Length) | No       | No           | No     | Yes   | **Yes**  |
 
-### Long-Context Benchmark
+### Real-World Benchmark
 
 We establish new forecasting benchmarks with yearly contexts and correlated variables based on [ECMWF Reanalysis v5 (ERA5)](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5) for the advancement of this field:
 
