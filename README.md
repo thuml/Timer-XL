@@ -8,17 +8,19 @@ Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[arxiv]
 
 🔥 Based on forecasting principles, we advocate to **extend the context length** in the time series field. 
 
-💡 To facilitate long-context Transformers on diverse tasks, we propose **multivariate next token prediction**, a novel paradigm to uniformly predict 1D and 2D time series with potential covariates. 
+💡 To facilitate long-context Transformers on diverse tasks, we propose **multivariate next token prediction**, a novel paradigm to uniformly predict 1D and 2D time series with optional covariates. 
 
 🌟 We present Timer-XL enhanced by a universal **TimeAttention** as an extra-long version of generative time-series Transformers ([Timer](https://github.com/thuml/Large-Time-Series-Model)) for unified time series forecasting.
 
-🏆 Timer-XL achieves **state-of-the-art** supervised performance and generalization capabilities as a one-for-all large time series model.
+🏆 Timer-XL achieves **state-of-the-art** on both supervised performance and generalization capabilities as a one-for-all large time series model.
 
 ## Updates
 
 :triangular_flag_on_post: **News** (2024.10) Code implementation and scripts will be released soon.
 
 ## What is New
+
+> For our previous large time series model, please refer to [**Tim**e-Series-Transform**er** (Timer)](https://github.com/thuml/Large-Time-Series-Model)
 
 ### Model Architecture
 
@@ -30,13 +32,13 @@ Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[arxiv]
 
 ### Long-Context Benchmark
 
-We establish challenging benchmarks with yearly contexts based on [ECMWF Reanalysis v5 (ERA5)](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5).
+We establish new forecasting benchmarks with yearly contexts and correlated variables based on [ECMWF Reanalysis v5 (ERA5)](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5) for the advancement of this field:
 
 * **ERA5-S (Univariate)**: Three-hour frequency atmospheric dataset spanning 40 years from ERA5, encompassing 116880 time points.
 
 * **ERA5-MS (Multivariate)**: A collection of multi-station ERA5-S datasets to provides partial observations governed by the spatio–temporal weather system.
 
-* **ERA5-Large (Pretrain)**: A large collection that evenly covers meteorological 4920 worldwide stations, aiming to build a domain-specific large model.
+* **ERA5-Large (Pretrain)**: A larger collection that evenly covers meteorological 4920 worldwide stations, aiming to build a domain-specific large model.
 
 The well-processed datasets and dataloaders will be released soon.
 
@@ -44,7 +46,7 @@ The well-processed datasets and dataloaders will be released soon.
 
 ### Multivariate Next Token Prediction
 
-We generalize next token prediction, predominantly adopted for causal generation of 1D sequences to multivariate time series. **Each prediction is made based on tokens of the previous time from all variables**:
+We generalize next token prediction, predominantly adopted for causal generation of 1D sequences to multivariate time series. **Each prediction is made based on tokens of the previous time from multiple variables**:
 
 <p align="center">
 <img src="./figures/mntp.png" alt="" align=center />
