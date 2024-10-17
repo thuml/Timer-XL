@@ -5,17 +5,17 @@ Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[arxiv]
 
 ## Introduction
 
-Timer-XL is a generative Transformer for unified time series forecasting, a mininally tailored scalable backbone for making long-context, aribitray-length and any-variable predictions.
+Timer-XL is a generative Transformer for time series forecasting, a mininally tailored scalable backbone for making long-context, aribitray-length and any-variable predictions.
 
 <p align="center">
 <img src="./figures/motivation.png" alt="" align=center />
 </p>
 
-💪 Based on forecasting principles, we advocate to **extend the context length** in the time series field. 
+💪 Grounded in forecasting principles, we advocate to **extend the context length** in the time series field. 
 
-💡 To facilitate long-context Transformers on diverse tasks, we propose **multivariate next token prediction**, a novel paradigm to uniformly predict 1D and 2D time series with optional covariates. 
+💡 We propose **multivariate next token prediction**, a novel paradigm to uniformly predict 1D and 2D time series with optional covariates. 
 
-🌟 We present Timer-XL enhanced by a universal **TimeAttention** as an extra-long version of generative time-series Transformers ([Timer](https://github.com/thuml/Large-Time-Series-Model)) for unified time series forecasting.
+🌟 We present Timer-XL enhanced by a universal **TimeAttention** as an extra-long version of generative time-series Transformers ([Timer](https://github.com/thuml/Large-Time-Series-Model)).
 
 🏆 Timer-XL achieves **state-of-the-art** on both supervised performance and generalization capabilities as a one-for-all large time series model.
 
@@ -27,11 +27,11 @@ Timer-XL is a generative Transformer for unified time series forecasting, a mini
 
 ### Model Architecture
 
-| Time-Series Transformers                      | PatchTST | iTransformer | Moiria | Timer | Timer-XL |
+| Time-Series Transformers                      | [PatchTST](https://github.com/PatchTST/PatchTST) | [iTransformer](https://github.com/thuml/iTransformer) | [Moiria](https://github.com/SalesforceAIResearch/uni2ts) | [Timer](https://github.com/thuml/Large-Time-Series-Model) | Timer-XL (Ours) |
 | --------------------------------------------- | -------- | ------------ | ------ | ----- | -------- |
-| Generative Model (Causality, Flexible Length) | No       | No           | No     | Yes   | **Yes**  |
-| Fine-Grained Modeling of Temporal Dynamics        | Yes      | No           | Yes    | Yes   | **Yes**  |
-| Explicit Modeling of Variate Correlation          | No       | Yes          | Yes    | No    | **Yes**  |
+| Generative (Causality) | No       | No           | No     | Yes   | **Yes**  |
+| Intra-Series Modeling        | Yes      | No           | Yes    | Yes   | **Yes**  |
+| Inter-Series Modeling          | No       | Yes          | Yes    | No    | **Yes**  |
 
 ### Real-World Benchmark
 
