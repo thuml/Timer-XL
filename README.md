@@ -2,6 +2,8 @@
 
 Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[arxiv]](https://arxiv.org/abs/2410.04803).
 
+> [!NOTE]
+> Our code implmentation and well-processed datasets have been released in [OpenLTSM (Open-Source Large Time Series Models)](https://github.com/thuml/OpenLTSM).
 
 ## Introduction
 
@@ -18,8 +20,6 @@ Timer-XL is a generative Transformer for time series forecasting, a mininally ta
 🌟 We present Timer-XL enhanced by a universal **TimeAttention** as an extra-long version of generative time-series Transformers ([Timer](https://github.com/thuml/Large-Time-Series-Model)).
 
 🏆 Timer-XL achieves **state-of-the-art** on both supervised performance and generalization capabilities as a one-for-all large time series model.
-
-
 
 ## What is New
 
