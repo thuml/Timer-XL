@@ -1,9 +1,9 @@
 # Timer-XL
 
-Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[arxiv]](https://arxiv.org/abs/2410.04803).
+Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[Paper]](https://arxiv.org/abs/2410.04803).
 
 > [!NOTE]
-> Our code implementation and well-processed datasets have been released in [OpenLTSM (Open-Source Large Time Series Models)](https://github.com/thuml/OpenLTSM).
+> Our code implementation have been released in [OpenLTSM (Open-Source Large Time Series Models)](https://github.com/thuml/OpenLTSM).
 
 ## Introduction
 
@@ -12,7 +12,6 @@ Timer-XL is a generative Transformer for time series forecasting, a minimally ta
 <p align="center">
 <img src="./figures/motivation.png" alt="" align=center />
 </p>
-
 
 💪 Grounded in forecasting principles, we advocate extending the context length** in the time series field. 
 
@@ -56,8 +55,6 @@ We generalize next token prediction, predominantly adopted for causal generation
 <img src="./figures/mntp.png" alt="" align=center />
 </p>
 
-
-
 ### Universal TimeAttention
 
 We introduce TimeAttention, a causal self-attention implementation for our proposed paradigm, which enables intra- and inter-series modeling with position perception and maintains the causality and flexibility of generative Transformers. The formulation is also generalizable to univariate and covariate-informed contexts with pre-defined variable dependency, enabling **unified time series forecasting**.
@@ -66,13 +63,11 @@ We introduce TimeAttention, a causal self-attention implementation for our propo
 <img src="./figures/timeattention.png" alt="" align=center />
 </p>
 
-
 ## Main Results
 
 <p align="center">
 <img src="./figures/performance.png" alt="" align=center />
 </p>
-
 
 ## Citation
 
