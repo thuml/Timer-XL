@@ -27,7 +27,7 @@ Timer-XL is a generative Transformer for time series forecasting, a mininally ta
 
 ### Model Architecture
 
-| Time-Series Transformers                      | [PatchTST](https://github.com/PatchTST/PatchTST) | [iTransformer](https://github.com/thuml/iTransformer) | [Moiria](https://github.com/SalesforceAIResearch/uni2ts) | [Timer](https://github.com/thuml/Large-Time-Series-Model) | Timer-XL (Ours) |
+| Time-Series Transformers                      | [PatchTST](https://github.com/PatchTST/PatchTST) | [iTransformer](https://github.com/thuml/iTransformer) | [Moirai](https://github.com/SalesforceAIResearch/uni2ts) | [Timer](https://github.com/thuml/Large-Time-Series-Model) | Timer-XL (Ours) |
 | --------------------------------------------- | -------- | ------------ | ------ | ----- | -------- |
 | Generative (Causality) | No       | No           | No     | Yes   | **Yes**  |
 | Intra-Series Modeling        | Yes      | No           | Yes    | Yes   | **Yes**  |
