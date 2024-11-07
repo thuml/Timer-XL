@@ -6,7 +6,7 @@ Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[Paper]
 
 ## Introduction
 
-Timer-XL is a generative Transformer for time series forecasting, a minimally tailored scalable backbone for making long-context, arbitrary-length, and any-variable predictions.
+Timer-XL is a generative Transformer for time series forecasting, a minimally tailored time-series foundation model for making long-context, arbitrary-length, and any-variable predictions.
 
 <p align="center">
 <img src="./figures/motivation.png" alt="" align=center />
