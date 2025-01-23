@@ -2,23 +2,27 @@
 
 Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[Paper]](https://arxiv.org/abs/2410.04803).
 
-:triangular_flag_on_post: **News** (2024.10) Code implementation is released in [OpenLTM (Open-Source Large Time-Series Models)](https://github.com/thuml/OpenLTM).
+:triangular_flag_on_post: **News** (2025.01) Timer-XL has been accepted as **ICLR 2025**. See you at Singapore :)
+
+:triangular_flag_on_post: **News** (2024.12) Released a univariate pre-trained version on **260B time points** [[HuggingFace]](https://huggingface.co/thuml/timer-base-84m). An example of zero-shot forecasting is provided [here](https://github.com/thuml/Large-Time-Series-Model/blob/main/examples/quickstart_zero_shot.ipynb).
+
+:triangular_flag_on_post: **News** (2024.10) Model implementation is released in [[OpenLTM]](https://github.com/thuml/OpenLTM).
 
 ## Introduction
 
-Timer-XL is a generative Transformer for time series forecasting, a minimally tailored time-series foundation model for making long-context, arbitrary-length, and any-variable predictions.
+Timer-XL is a generative Transformer for time series forecasting. It can be used for task-specific training or scalable pre-training, handling arbitrary-length and any-variable time series.
 
 <p align="center">
 <img src="./figures/motivation.png" alt="" align=center />
 </p>
 
-💪 Grounded in forecasting principles, we advocate **extending the context length** in the time series field. 
+💪 Various forecasting tasks can be formuled as a long-context generation problem, which can be well addressed by generative Transformers.
 
-💡 We propose **multivariate next token prediction**, a novel paradigm to uniformly predict 1D and 2D time series with optional covariates. 
+💡 We propose **multivariate next token prediction**, a paradigm to uniformly predict univariate and multivariate time series with optional covariates. 
 
-🌟 We present Timer-XL enhanced by a universal **TimeAttention** as an extra-long version of generative time-series Transformers ([Timer](https://github.com/thuml/Large-Time-Series-Model)).
+🌟 We pre-train Timer-XL, a long-context version of time-series Transformers ([Timer](https://github.com/thuml/Large-Time-Series-Model)), for zero-shot forecasting.
 
-🏆 Timer-XL achieves **state-of-the-art** on both supervised performance and generalization capabilities as a one-for-all large time-series model.
+🏆 Timer-XL achieves **state-of-the-art** performance as a one-for-all time series forecaster.
 
 ## What is New
 
@@ -28,27 +32,15 @@ Timer-XL is a generative Transformer for time series forecasting, a minimally ta
 
 | Time-Series Transformers | [PatchTST](https://github.com/PatchTST/PatchTST) | [iTransformer](https://github.com/thuml/iTransformer) | [Moirai](https://github.com/SalesforceAIResearch/uni2ts) | [Timer](https://github.com/thuml/Large-Time-Series-Model) | [Timer-XL (Ours)](https://github.com/thuml/OpenLTSM) |
 | ------------------------ | ------------------------------------------------ | ----------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------- | --------------- |
-| Generative (Causality)   | No                                               | No                                                    | No                                                       | Yes                                                       | **Yes**         |
+| Generative               | No                                               | No                                                    | No                                                       | Yes                                                       | **Yes**         |
 | Intra-Series Modeling    | Yes                                              | No                                                    | Yes                                                      | Yes                                                       | **Yes**         |
 | Inter-Series Modeling    | No                                               | Yes                                                   | Yes                                                      | No                                                        | **Yes**         |
-
-### Real-World Benchmark
-
-We establish new forecasting benchmarks with yearly contexts and correlated variables based on [ECMWF Reanalysis v5 (ERA5)](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5) for the advancement of this field:
-
-* **ERA5-S (Univariate)**: Three-hour frequency atmospheric dataset spanning 40 years from ERA5, encompassing 116880 time points.
-
-* **ERA5-MS (Multivariate)**: A collection of multi-station ERA5-S datasets to provide partial observations governed by the spatiotemporal weather system.
-
-* **ERA5-Large (Pretrain)**: A larger collection that evenly covers meteorological 4920 worldwide stations, aiming to build a domain-specific large model.
-
-The well-processed datasets and dataloaders will be released soon.
 
 ## Generalize 1D Sequences to 2D Time Series
 
 ### Multivariate Next Token Prediction
 
-We generalize next token prediction, predominantly adopted for causal generation of 1D sequences to multivariate time series. **Each prediction is made based on tokens of the previous time from multiple variables**:
+We generalize next token prediction for multivariate time series. **Each prediction is made based on tokens of the previous time from multiple variables**:
 
 <p align="center">
 <img src="./figures/mntp.png" alt="" align=center />
@@ -56,7 +48,7 @@ We generalize next token prediction, predominantly adopted for causal generation
 
 ### Universal TimeAttention
 
-We introduce TimeAttention, a causal self-attention implementation for our proposed paradigm, which enables intra- and inter-series modeling with position perception and maintains the causality and flexibility of generative Transformers. The formulation is also generalizable to univariate and covariate-informed contexts with pre-defined variable dependency, enabling **unified time series forecasting**.
+We design TimeAttention, a causal self-attention allowing intra- and inter-series modeling while maintaining the causality and flexibility of generative Transformers. It can be applied to univariate and covariate-informed contexts, enabling **unified time series forecasting**.
 
 <p align="center">
 <img src="./figures/timeattention.png" alt="" align=center />
