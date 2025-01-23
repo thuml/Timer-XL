@@ -4,7 +4,7 @@ Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[Paper]
 
 :triangular_flag_on_post: **News** (2025.01) Timer-XL has been accepted as **ICLR 2025**. See you at Singapore :)
 
-:triangular_flag_on_post: **News** (2024.12) Released a univariate pre-trained version on **260B time points** [[HuggingFace]](https://huggingface.co/thuml/timer-base-84m). An example of zero-shot forecasting is provided [here](https://github.com/thuml/Large-Time-Series-Model/blob/main/examples/quickstart_zero_shot.ipynb).
+:triangular_flag_on_post: **News** (2024.12) Released a univariate pre-trained version [[HuggingFace]](https://huggingface.co/thuml/timer-base-84m). An quickstart usage is provided [here](https://github.com/thuml/Large-Time-Series-Model/blob/main/examples/quickstart_zero_shot.ipynb).
 
 :triangular_flag_on_post: **News** (2024.10) Model implementation is released in [[OpenLTM]](https://github.com/thuml/OpenLTM).
 
