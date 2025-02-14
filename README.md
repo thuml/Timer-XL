@@ -10,7 +10,7 @@ Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[Paper]
 
 ## Introduction
 
-Timer-XL is a generative Transformer for time series forecasting. It can be used for task-specific training or scalable pre-training, handling arbitrary-length and any-variable time series.
+Timer-XL is a generative Transformer for time series forecasting. It can be used for **task-specific training** or **scalable pre-training**, handling **arbitrary-length** and **any-variable** time series.
 
 <p align="center">
 <img src="./figures/motivation.png" alt="" align=center />
