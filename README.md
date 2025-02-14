@@ -10,15 +10,15 @@ Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[Paper]
 
 ## Introduction
 
-Timer-XL is a generative Transformer for time series forecasting. It can be used for **task-specific training** or **scalable pre-training**, handling **arbitrary-length** and **any-variable** time series.
+Timer-XL is a decoder-only Transformer for time series forecasting. It can be used for **task-specific training** or **scalable pre-training**, handling **arbitrary-length** and **any-variable** time series.
 
 <p align="center">
 <img src="./figures/motivation.png" alt="" align=center />
 </p>
 
-💪 Various forecasting tasks can be formuled as a long-context generation problem, which can be well addressed by generative Transformers.
+💪 We observe performance degradation of encoder-only Transformers on long-context time series.
 
-💡 We propose **multivariate next token prediction**, a paradigm to uniformly predict univariate and multivariate time series with optional covariates. 
+💡 We propose **multivariate next token prediction**, a paradigm to uniformly predict univariate and multivariate time series with decoder-only Transformers. 
 
 🌟 We pre-train Timer-XL, a long-context version of time-series Transformers ([Timer](https://github.com/thuml/Large-Time-Series-Model)), for zero-shot forecasting.
 
@@ -30,9 +30,9 @@ Timer-XL is a generative Transformer for time series forecasting. It can be used
 
 ### Model Architecture
 
-| Time-Series Transformers | [PatchTST](https://github.com/PatchTST/PatchTST) | [iTransformer](https://github.com/thuml/iTransformer) | [Moirai](https://github.com/SalesforceAIResearch/uni2ts) | [Timer](https://github.com/thuml/Large-Time-Series-Model) | [Timer-XL (Ours)](https://github.com/thuml/OpenLTSM) |
+| Time-Series Transformers | [PatchTST](https://github.com/PatchTST/PatchTST) | [iTransformer](https://github.com/thuml/iTransformer) | [Moirai](https://github.com/SalesforceAIResearch/uni2ts) | [Timer](https://github.com/thuml/Large-Time-Series-Model) | [Timer-XL (Ours)](https://github.com/thuml/OpenLTM/blob/main/models/timer_xl.py) |
 | ------------------------ | ------------------------------------------------ | ----------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------- | --------------- |
-| Generative               | No                                               | No                                                    | No                                                       | Yes                                                       | **Yes**         |
+| Decoder-Only               | No                                               | No                                                    | No                                                       | Yes                                                       | **Yes**         |
 | Intra-Series Modeling    | Yes                                              | No                                                    | Yes                                                      | Yes                                                       | **Yes**         |
 | Inter-Series Modeling    | No                                               | Yes                                                   | Yes                                                      | No                                                        | **Yes**         |
 
@@ -40,7 +40,7 @@ Timer-XL is a generative Transformer for time series forecasting. It can be used
 
 ### Multivariate Next Token Prediction
 
-We generalize next token prediction for multivariate time series. **Each prediction is made based on tokens of the previous time from multiple variables**:
+We generalize next-token prediction for multivariate time series. **Each prediction is made based on tokens of the previous time from multiple variables**:
 
 <p align="center">
 <img src="./figures/mntp.png" alt="" align=center />
@@ -48,7 +48,7 @@ We generalize next token prediction for multivariate time series. **Each predict
 
 ### Universal TimeAttention
 
-We design TimeAttention, a causal self-attention allowing intra- and inter-series modeling while maintaining the causality and flexibility of generative Transformers. It can be applied to univariate and covariate-informed contexts, enabling **unified time series forecasting**.
+We design TimeAttention, a causal self-attention allowing intra- and inter-series modeling while maintaining the causality and flexibility of decoder-only Transformers. It can be applied to univariate and covariate-informed contexts, enabling **unified time series forecasting**.
 
 <p align="center">
 <img src="./figures/timeattention.png" alt="" align=center />
