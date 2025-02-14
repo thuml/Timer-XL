@@ -6,7 +6,7 @@ Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[Paper]
 
 :triangular_flag_on_post: **News** (2024.12) Released a univariate pre-trained model [[HuggingFace]](https://huggingface.co/thuml/timer-base-84m). An quickstart usage is provided [here](https://github.com/thuml/Large-Time-Series-Model/blob/main/examples/quickstart_zero_shot.ipynb).
 
-:triangular_flag_on_post: **News** (2024.10) Model implementation is released in [[OpenLTM]](https://github.com/thuml/OpenLTM).
+:triangular_flag_on_post: **News** (2024.10) Model implementation is included in [[OpenLTM]](https://github.com/thuml/OpenLTM/blob/main/models/timer_xl.py).
 
 ## Introduction
 
