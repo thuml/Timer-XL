@@ -28,7 +28,7 @@ Timer-XL is a decoder-only Transformer for time series forecasting. It can be us
 
 > For our previous work, please refer to [**Tim**e-Series-Transform**er** (Timer)](https://github.com/thuml/Large-Time-Series-Model)
 
-### Model Architecture
+### Comparison
 
 | Time-Series Transformers | [PatchTST](https://github.com/PatchTST/PatchTST) | [iTransformer](https://github.com/thuml/iTransformer) | [Crossformer](https://github.com/Thinklab-SJTU/Crossformer) | [UniTST](https://arxiv.org/abs/2406.04975) | [Moirai](https://github.com/SalesforceAIResearch/uni2ts) | [Timer](https://github.com/thuml/Large-Time-Series-Model) | [Timer-XL (Ours)](https://github.com/thuml/OpenLTM/blob/main/models/timer_xl.py) |
 | ------------------------ | ------------------------------------------------ | ----------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------  | --------------------------------------------------------  | --------------------------------------------------------- | ---------------|
