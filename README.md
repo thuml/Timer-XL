@@ -1,6 +1,6 @@
 # Timer-XL
 
-Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[Paper]](https://arxiv.org/abs/2410.04803).
+Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[Paper]](https://arxiv.org/abs/2410.04803),[[Slides]](https://cloud.tsinghua.edu.cn/f/2d4b660fc05148dc8f30/).
 
 :triangular_flag_on_post: **News** (2025.01) Timer-XL has been accepted as **ICLR 2025**. See you at Singapore :)
 
