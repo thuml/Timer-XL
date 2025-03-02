@@ -22,7 +22,7 @@ Timer-XL is a decoder-only Transformer for time series forecasting. It can be us
 
 🌟 We pre-train Timer-XL, a long-context version of time-series Transformers ([Timer](https://github.com/thuml/Large-Time-Series-Model)), for zero-shot forecasting.
 
-🏆 Timer-XL achieves **state-of-the-art** performance as a one-for-all time series forecaster.
+🏆 Timer-XL achieves **state-of-the-art** performance as for time series forecasting: [[Univariate]](./figures/univariate.png), [[Multivariate]](./figures/multivariate.png), [[Covariate]](./figures/covariate.png), [[Zero-shot]](./figures/zeroshot.png).
 
 ## What is New
 
