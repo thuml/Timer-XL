@@ -28,6 +28,9 @@ Timer-XL is a decoder-only Transformer for time series forecasting. It can be us
 
 > For our previous work, please refer to [**Tim**e-Series-Transform**er** (Timer)](https://github.com/thuml/Large-Time-Series-Model)
 
+**In a word, we generalize next token prediction from 1D sequences to 2D time series.**
+
+
 ### Comparison
 
 | Time-Series Transformers | [PatchTST](https://github.com/PatchTST/PatchTST) | [iTransformer](https://github.com/thuml/iTransformer) | [TimeXer](https://github.com/thuml/TimeXer) | [UniTST](https://arxiv.org/abs/2406.04975) | [Moirai](https://github.com/SalesforceAIResearch/uni2ts) | [Timer](https://github.com/thuml/Large-Time-Series-Model) | [Timer-XL (Ours)](https://github.com/thuml/OpenLTM/blob/main/models/timer_xl.py) |
@@ -37,7 +40,6 @@ Timer-XL is a decoder-only Transformer for time series forecasting. It can be us
 | Causal Transformer       | No                                               | No                                                    | No                                                       | No                                                        | No                                                       | Yes                                                       | **Yes**         |
 | Pre-Trained              | No                                               | No                                                    | No                                                       | No                                                        | Yes                                                      | Yes                                                       | **Yes**         |
 
-## Generalize 1D Sequences to 2D Time Series
 
 ### Multivariate Next Token Prediction
 
