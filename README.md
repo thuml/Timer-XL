@@ -90,3 +90,7 @@ If you have any questions or want to use the code, feel free to contact:
 
 * Yong Liu (liuyong21@mails.tsinghua.edu.cn)
 * Guo Qin (qinguo24@mails.tsinghua.edu.cn)
+
+## License
+
+This model is licensed under the Apache-2.0 License.
