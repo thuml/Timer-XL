@@ -10,7 +10,7 @@ Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[Paper]
 
 ## Usage
 
-### Zero-shot forecasting
+### Zero-Shot Forecasting
 
 For users interested in zero-shot forecasting, we release a [HuggingFace model](https://huggingface.co/thuml/timer-base-84m) as a out-of-box forecaster.
 
