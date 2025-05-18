@@ -16,7 +16,7 @@ For users interested in zero-shot forecasting, we release a [HuggingFace model](
 
 ### Model Adaptation
 
-For developer interested in fine-tuning or training on customized datasets, please refer to [OpenLTM](https://github.com/thuml/OpenLTM) and use this [checkpoint](https://github.com/thuml/OpenLTM/blob/main/load_pth_ckpt.ipynb) for model adaptation.
+For developer interested in fine-tuning or training on customized datasets, please refer to [OpenLTM](https://github.com/thuml/OpenLTM).
 
 
 ## Introduction
