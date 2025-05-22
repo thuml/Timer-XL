@@ -2,11 +2,11 @@
 
 Timer-XL: Long-Context Transformers for Unified Time Series Forecasting [[Paper]](https://arxiv.org/abs/2410.04803), [[Slides]](https://cloud.tsinghua.edu.cn/f/2d4b660fc05148dc8f30/), [[Poster]](https://cloud.tsinghua.edu.cn/f/378fbc6f0359460880aa/), [[Intro]](https://mp.weixin.qq.com/s/IFqysOWo1prdjeBpCiNXBg)
 
-:triangular_flag_on_post: **News** (2025.01) Timer-XL has been accepted as **ICLR 2025**. See you at Singapore :)
+:triangular_flag_on_post: **News** (2025.01) Timer-XL has been accepted as **ICLR 2025**. See you in Singapore :)
 
 :triangular_flag_on_post: **News** (2024.12) Released a univariate pre-trained model [[HuggingFace]](https://huggingface.co/thuml/timer-base-84m). A quickstart usage is provided [here](./quickstart_zero_shot.ipynb).
 
-:triangular_flag_on_post: **News** (2024.10) Model checkpoiint, training script, and pre-training dataset are released in [[OpenLTM]](https://github.com/thuml/OpenLTM).
+:triangular_flag_on_post: **News** (2024.10) Model checkpoint, training script, and pre-training dataset are released in [[OpenLTM]](https://github.com/thuml/OpenLTM).
 
 ## Usage
 
@@ -16,7 +16,7 @@ For users interested in zero-shot forecasting, we release a [HuggingFace model](
 
 ### Model Adaptation
 
-For developer interested in fine-tuning or training on customized datasets, please refer to [OpenLTM](https://github.com/thuml/OpenLTM).
+For developers interested in fine-tuning or training on customized datasets, please refer to [OpenLTM](https://github.com/thuml/OpenLTM).
 
 
 ## Introduction
